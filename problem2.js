@@ -1,10 +1,16 @@
-const firstName = 'william';
-const lastName = 'Johnson';
+//Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
 
-let val;
+function vowelCount(str) {
+	var count = 0;
+	var vowels = "aeiou";
 
-val = firstName;
-val = firstName.length;
+	for (var i = 0; i < str.length; i++){
+		if (vowels.indexOf(str[i]) > -1); {
+			count++;
+		}
+	}
 
-
-console.log(val);
+	return count;
+}
+	
+vowelCount("how many vowels are there in this string");
