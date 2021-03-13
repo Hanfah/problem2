@@ -2,15 +2,15 @@
 
 function vowelCount(str) {
 	var count = 0;
-	var vowels = "aeiou";
+	var vowels = "aeiuo";
 
 	for (var i = 0; i < str.length; i++){
-		if (vowels.indexOf(str[i]) > -1); {
+		if (vowels.indexOf(str[i]) > -1) {
 			count++;
 		}
 	}
 
-	return count;
+	console.log(count);
 }
-	
-vowelCount("how many vowels are there in this string");
+
+vowelCount("dogs and cats are best friends");
